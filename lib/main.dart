@@ -13,7 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Weather App',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
+        textTheme: const TextTheme(
+          bodyMedium: TextStyle(color: Colors.white, fontSize: 18),
+        )
       ),
       debugShowCheckedModeBanner: false,
       home: const HomeView()
